@@ -1,0 +1,12 @@
+**/.git
+**/.env*
+**/.venv*
+**/Jenkinsfile
+**/.vscode
+
+**/*.pyc
+**/__pycache__
+
+**/.coverage
+**/.mypy_cache
+**/.pytest_cache
