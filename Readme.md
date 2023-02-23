@@ -39,57 +39,6 @@ Code formatting
 poetry run black .
 ```
 
-## Docker
+## Makefile
 
-Build local docker images
-
-```
-docker-compose build
-```
-
-Run dev containers
-
-```
-docker-compose up
-```
-
-## Migrations
-
-setup initial migrations
-
-```
-flask db init
-```
-
-generate migration files
-
-```
-flask db migrate
-```
-
-apply migration
-
-```
-flask db upgrade
-```
-
-## DotEnv File
-
-You will need to create and file a '.env' file. Here are sample values:
-
-```
-MAILGUN_API_KEY=
-MAILGUN_DOMAIN=
-REDIS_PASSWORD=VfpFtOFGxx0BRYJ6WH5IZNEWBzcuZtJ9
-TASK_QUEUE_REDIS_URL=redis://:VfpFtOFGxx0BRYJ6WH5IZNEWBzcuZtJ9@redis-queue:6379
-USE_BACKGROUND_WORKER=true
-POSTGRES_USER=POSTGRES_USER
-POSTGRES_PASSWORD=POSTGRES_PASSWORD
-POSTGRES_DB=POSTGRES_DB
-DATABASE_URL=postgresql://POSTGRES_USER:POSTGRES_PASSWORD@db:5432/POSTGRES_DB
-FLASK_APP=pythonrestapi/application.py
-FLASK_ENV=development
-JWT_SECRET_KEY=
-PYTHON_REST_API_CONFIG_FILE=config/config_test.py
-ENV_NAME=test
-```
+See Makefile for common operations
